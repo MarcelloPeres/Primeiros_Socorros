@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+     <header>
+        <div class="cabecalho">
+            <img class="logo-first-aid" src="./images/Main.png" alt="imagem do icone">
+            <nav class="menu-principal">
+                <a href="index.html">Página Inicial</a>
+                <a href="procedimentos.html">Procedimentos</a>
+                <a href="form.html">Formulário</a>
+                <a class="cabecalho-menu-item">link 4</a>
+            </nav>
+            <button class="dark-theme" id="botao-alterar-tema">
+                <img src="./images/sun.png" alt="imagem do Sol" class="imagem-botao"/>
+            </button>
+        </div>
+    </header>
+    <main>
+<div class="conteudo-geral">
+        <div class="formulario">
+
+            <h1 class="formulario-titulo" id="formulario-titulo"> Formulário</h1>
+
+            <h3 class="formulario-titulo-h3"> Gostaria de receber mais informações sobre primeiros socorros diretamente
+                em sua
+                caixa de entrada? Assine nossa newsletter para ficar atualizado com dicas, técnicas avançadas e
+                as últimas notícias relacionadas à prestação de primeiros socorros. Não perca a oportunidade de
+                aprimorar seus conhecimentos e estar preparado para lidar com situações de emergência. Inscreva-se agora
+                e junte-se à
+                nossa comunidade comprometida em salvar vidas!</h3>
+            <section class="Form-e-imagem">
+
+                <form class="formulario-bloco"id="form">
+                    <label for="Nome:">Nome</label>
+                    <input type="name" id="name">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email">
+
+
+                    <label for="job">Situação de trabalho:</label>
+                    <select name="job" id="job">
+                        <option value="">É profissional da área de Saúde?</option>
+                        <option value="yes">Sim</option>
+                        <option value="no">Não</option>
+                    </select>
+
+                    <label for="message">Se preferir, deixe-nos uma mensagem</label>
+                    <textarea name="message" id="message"></textarea>
+
+                    <button class="enviar-formulario" type="submit">Enviar</button>
+
+                </form>
+            
+
+                <img class="form-image" src="./images/form-girl.png" alt="Form-girl">
+
+        </div>
+    </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <div class="rodape">
+            <img class="telefone-imagem" src="images/Phone.png" alt="telefone">
+            <h2>Sites úteis</h2>
+            <nav class="menu-inferior">
+                <a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/samu-192" target="blank" rel="external">SAMU</a>
+                <a href="https://www.bombeiros.rs.gov.br/inicial" target="blank" rel="external">Bombeiros</a>
+                <a href="https://www.defesacivil.rs.gov.br/inicial" target="blank" rel="external">Defesa Civil</a>
+                <a class="cabecalho-menu-item">Disque Intoxicação</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
