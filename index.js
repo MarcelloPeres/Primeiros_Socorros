@@ -1,5 +1,5 @@
 
-/* DARK MODE */
+//----------------------------------------------DARK MODE 
 
 const botaoAlterarTema = document.getElementById("botao-alterar-tema");
 const body = document.querySelector(".conteudo-geral");
@@ -34,4 +34,65 @@ botaoAlterarTema.addEventListener("click", () => {
 
 // Aplica o tema inicial ao carregar a página
 aplicarTema();
+
+
+
+// ------------------------------------------ VALIDAÇÃO DO FORMULÁRIO 
+
+
+const form = document.querySelector("#form");
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+const passwordInput = document.querySelector("#password");
+const JobSelect = document.querySelector("#job");
+const messageTextArea = document.querySelector("#message");
+
+
+form.addEventListener("submit", (event) => {
+event.preventDefault();
+
+//verificar se nome ta vazio
+
+if(nameInput.value ===""){
+    alert("Por favor, preencha o seu nome");
+    return;
+
+}
+
+//verificando e-mail valido
+
+if(emailInput.value ==="" || !isEmailValid(emailInput.value)){
+    alert("Por favor, preencha o seu email");
+    return;
+
+}
+
+if (JobSelect.value ===""){
+    alert("Por favor, escolha uma situação");
+return;
+}
+
+// Verificar se a situação foi escolhida
+
+
+
+form.submit();
+alert("Formulário enviado com sucesso!");
+
+});
+
+
+//função de validação do Email
+
+function isEmailValid(email) {
+    const emailRegex = new RegExp(
+        //Usuário@host.com.br
+/^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/
+);
+
+    if(emailRegex.test(email)){
+        return true;
+    }
+    return false;
+}
 
